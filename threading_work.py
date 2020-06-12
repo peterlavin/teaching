@@ -15,7 +15,6 @@ def can_be_slow(ex_time: int) -> None:
     time.sleep(ex_time)
     print(f'Func can_be_slow() is about to exit after {ex_time} sec.')
 
-
 print('Run before thread is started')
 
 ex_time = 0.5
@@ -26,7 +25,6 @@ print(th.is_alive())
 th.start()
 
 print('Run after thread is started but not blocked by it')
-
 
 time.sleep(ex_time + 0.1)
 print(f'th.is_alive() is {th.is_alive()}')
