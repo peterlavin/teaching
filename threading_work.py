@@ -25,6 +25,6 @@ print(th.is_alive())
 th.start()
 
 print('Run after thread is started but not blocked by it')
-
+ 
 time.sleep(ex_time + 0.1)
 print(f'th.is_alive() is {th.is_alive()}')
